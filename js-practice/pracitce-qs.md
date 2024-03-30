@@ -96,4 +96,10 @@ Each console.log(i) statement inside the setTimeout callback is referencing the 
 
 When you use let instead of var in the for loop for the above example, it creates a new binding for i in each iteration of the loop. This means that each iteration of the loop will have its own separate i variable, preserving the value of i at each iteration when the setTimeout callback is executed.
 
- 
+ what is hoisting?
+ Hoisting is a JavaScript mechanism where variable and function declarations are moved to the top of their scope before code execution. This means that functions and variables can be used before they are declared.
+
+ [9:58 AM] Admin
+y= 5;
+console.log(y);
+var y ;
