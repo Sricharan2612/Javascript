@@ -99,7 +99,6 @@ When you use let instead of var in the for loop for the above example, it create
  what is hoisting?
  Hoisting is a JavaScript mechanism where variable and function declarations are moved to the top of their scope before code execution. This means that functions and variables can be used before they are declared.
 
- [9:58 AM] Admin
 y= 5;
 console.log(y);
 var y ;
