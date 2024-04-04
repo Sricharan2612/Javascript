@@ -102,3 +102,66 @@ When you use let instead of var in the for loop for the above example, it create
 y= 5;
 console.log(y);
 var y ;
+
+//Find max element in an array
+function findMax(arr){
+    let max = arr[0];
+    for(let i = 1; i<arr.length; i++){
+        if(arr[i] > max){
+            max = arr[i];
+        }
+    }
+    return max;
+}
+let arr = [5, 90, 16, 3, 25, 64];
+const res = findMax(arr);
+console.log(res);
+
+
+//Find sum of all elements in an array
+
+function sum(arr){
+    let sum = 0;
+    for(let i = 0; i<arr.length; i++){
+        sum+=arr[i];
+    }
+    return sum;
+}
+let arr = [10, 20, 30, 40, 50];
+let res = sum(arr);
+console.log(res);
+
+
+//Remove elements from array which are not divisible by 2
+function divNum(arr){
+    let arrNew;
+    for(let i = 0; i<arr.length; i++){
+        if(arr[i] % 2 === 0){
+            arr.splice(i,1);
+        }
+    }
+    return arr;
+}
+let arr = [10, 3, 71, 45, 30];
+let res = divNum(arr);
+console.log(res);
+
+//Function to sort an array
+function sortElements(arr){
+    let temp;
+    for(let i = 0; i<arr.length; i++){
+        for(let j = i+1; j<arr.length; j++){
+            if(arr[i] > arr[j]){
+                temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+    return arr;
+}
+
+let arr = [40, 5, 13, 27, 9];
+let arr1 = ['e', 'f', 'c', 'a', 'z'];
+let res = sortElements(arr);
+console.log(res);
