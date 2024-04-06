@@ -62,6 +62,16 @@ eg. const arr = [10, 6, 23, 46, 54];
     arr.splice(1,2);
     console.log(arr);
 
+8.includes(): Used to check whether an element is present in an array or not.
+eg. let text = "Hello world, welcome to the universe.";
+    let result = text.includes("world");
+    console.log(result);
+
+9.indexOf(): Used to find the index of a value present in the array.
+eg. let text = "Hello world, welcome to the universe.";
+    let res = text.indexOf("e");
+    console.log(res);
+
 
 Some More Practice Questions --->
 //Find max element in an array
