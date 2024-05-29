@@ -193,3 +193,126 @@ let arr = [5, 3, 6, 11, 2]
 let arr1 = ['e', 'f', 'c', 'a', 'z'];
 let res = sortElements(arr1);
 console.log(res);
+
+
+//Remove duplicate elements from an array
+const arr = [1, 2, 3, 4, 5, 5, 5, 6, 7, 8, 8, 9, 9];
+const arr1 = [];
+arr.forEach((num)=>{
+    if(!arr1.includes(num)){
+        arr1.push(num);
+    }
+})
+console.log(arr1);
+
+const obj = {
+    a:1,
+    b:2,
+    c:3
+}
+
+const values = Object.values(obj);
+const doubledValues = values.map((val)=> val*2);
+console.log(doubledValues);
+
+
+const products = [
+
+    {id:1,name:'smart wactch', category:'electronics'},
+
+    {id:1,name:'mobile', category:'electronics'},
+
+    {id:1,name:'Jeans', category:'fashion'}, 
+
+    {id:1,name:'bat', category:'sports'}
+
+    ]
+
+   const output = products.reduce((prev, curr)=>{
+    return 
+   },products[0].catecory) 
+
+
+   [8:33 AM] Admin
+const products = [
+
+    {id:1,name:'smart wactch', category:'electronics'},
+
+    {id:1,name:'mobile', category:'electronics'},
+
+    {id:1,name:'Jeans', category:'fashion'}, 
+
+    {id:1,name:'bat', category:'sports'}
+
+    ]
+[8:51 AM] Admin
+const group_products = products.reduce((call_back,initial_value) =>{
+
+    const category = initial_value.category
+
+    if(!call_back[category]){
+
+        call_back[category] = []
+
+    }
+
+    call_back[category].push(initial_value)
+
+    return call_back
+
+}, {});
+
+console.log(group_products)
+[8:58 AM] Admin
+const numbers = [2,4,10,100,40,50,13]
+ 
+const max_number = numbers.reduce((call_back,current_value) =>{
+
+    return call_back > current_value ? call_back: current_value
+
+// if(call_back > current_value){
+
+// return callback
+
+// } else {
+
+// return current_value
+
+// }
+ 
+ 
+},numbers[0])
+ 
+console.log(max_number )
+ 
+ 
+const products = [
+
+    {id:1,name:'smart wactch', category:'electronics'},
+
+    {id:1,name:'mobile', category:'electronics'},
+
+    {id:1,name:'Jeans', category:'fashion'}, 
+
+    {id:1,name:'bat', category:'sports'}
+
+    ]
+
+
+const group_products = products.reduce((call_back,initial_value) =>{
+
+    const category = initial_value.category
+
+    if(!call_back[category]){
+
+        call_back[category] = []
+
+    }
+
+    call_back[category].push(initial_value)
+
+    return call_back
+
+}, {});
+
+console.log(group_products)
